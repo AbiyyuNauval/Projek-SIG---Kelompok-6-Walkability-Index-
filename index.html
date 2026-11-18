@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="WebGIS fasilitas pejalan kaki (walkability) Kota Pekanbaru: halte, zebra cross, jalur dan area pedestrian hasil survei lapangan." />
+    <title>LangkahKota Pekanbaru · WebGIS Walkability</title>
+  </head>
+
+  <body class="home">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>LangkahKota <small>Pekanbaru</small></span>
+      </a>
+      <nav class="topnav">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./peta.html">Peta Interaktif</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero-grid">
+            <div>
+              <span class="eyebrow">WebGIS · Sistem Informasi Geografis</span>
+              <h1>Seberapa ramah kota ini untuk <em>pejalan kaki</em>?</h1>
+              <p class="lead">
+                LangkahKota memetakan fasilitas pejalan kaki di Kota Pekanbaru (halte, zebra cross, jembatan
+                penyeberangan, jalur trotoar, dan area pedestrian) dari hasil survei lapangan. Lewat analisis spasial,
+                web ini menunjukkan halte mana yang belum didukung fasilitas penyeberangan yang aman.
+              </p>
+              <div class="cta">
+                <a class="btn" href="./peta.html">Buka Peta Interaktif →</a>
+                <a class="btn btn-ghost" href="#tentang">Tentang proyek</a>
+              </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="road"></div>
+              <div class="zebra-x"></div>
+              <div class="ring" style="left: 6%; top: 8%; width: 58%; height: 58%; border-color: rgba(22, 163, 74, 0.9)"></div>
+              <div class="ring" style="left: 44%; top: 46%; width: 52%; height: 52%; border-color: rgba(220, 38, 38, 0.9)"></div>
+              <div class="pin" data-ikon="halte" data-warna="#16A34A" style="left: 30%; top: 32%"></div>
+              <div class="pin" data-ikon="zebra" data-warna="#1D4ED8" style="left: 46%; top: 44%"></div>
+              <div class="pin" data-ikon="halte" data-warna="#DC2626" style="left: 66%; top: 68%"></div>
+              <div class="tag" style="left: 6%; top: 6%">Terlayani · 120 m</div>
+              <div class="tag" style="left: 44%; top: 88%">Tidak terlayani · 1,2 km</div>
+            </div>
+          </div>
+
+          <div class="stat-strip" id="stat-strip">
+            <div><b data-stat="titik">–</b><span>Titik fasilitas disurvei</span></div>
+            <div><b data-stat="halte">–</b><span>Halte bus</span></div>
+            <div><b data-stat="penyeberangan">–</b><span>Fasilitas penyeberangan</span></div>
+            <div><b data-stat="jalur">–</b><span>Jalur pedestrian (total panjang)</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFIL -->
+      <section class="section" id="tentang">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Profil Web</span>
+            <h2>Tentang LangkahKota</h2>
+            <p>
+              <i>Walkability</i> adalah ukuran seberapa nyaman, aman, dan mudah sebuah kawasan dilalui dengan berjalan kaki.
+              Salah satu indikatornya adalah keterhubungan halte angkutan umum dengan fasilitas penyeberangan. Penumpang
+              yang turun dari bus hampir selalu perlu menyeberang jalan.
+            </p>
+          </div>
+          <div class="grid-3">
+            <div class="box">
+              <span class="num">01</span>
+              <h3>Inventarisasi fasilitas</h3>
+              <p>Mendokumentasikan lokasi halte, zebra cross, jembatan penyeberangan, trotoar, dan area pedestrian hasil survei GPS lapangan.</p>
+            </div>
+            <div class="box">
+              <span class="num">02</span>
+              <h3>Analisis jangkauan</h3>
+              <p>Mengukur jangkauan jalan kaki di sekitar halte dan jarak ke fasilitas penyeberangan terdekat dengan analisis buffer dan spatial query.</p>
+            </div>
+            <div class="box">
+              <span class="num">03</span>
+              <h3>Dukungan keputusan</h3>
+              <p>Menyusun daftar prioritas halte yang paling membutuhkan penambahan fasilitas penyeberangan, sebagai bahan rekomendasi bagi pemangku kebijakan.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DATA -->
+      <section class="section" id="data">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Data Spasial</span>
+            <h2>Tiga layer hasil survei lapangan</h2>
+            <p>Data dikumpulkan dengan GPS pada 30 September sampai 7 Oktober 2026, kemudian diolah ke format GeoJSON (WGS 84 / EPSG:4326).</p>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr><th>Layer</th><th>Geometri</th><th>Isi</th><th>Visualisasi di peta</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Titik fasilitas pedestrian</td>
+                <td>Point</td>
+                <td>
+                  <span class="chip">Halte</span><span class="chip">Zebra Cross</span><span class="chip">Jembatan / Penyeberangan</span><span class="chip">Trotoar</span>
+                </td>
+                <td>Ikon berbeda per kategori; warna &amp; ukuran halte mengikuti status pelayanan</td>
+              </tr>
+              <tr>
+                <td>Jalur pedestrian</td>
+                <td>LineString</td>
+                <td>Segmen trotoar di koridor Jl. Jenderal Sudirman (hasil tracking GPS)</td>
+                <td>Warna berbeda per segmen; popup panjang jalur</td>
+              </tr>
+              <tr>
+                <td>Area pedestrian &amp; taman</td>
+                <td>Polygon</td>
+                <td>Area pejalan kaki dan taman kota/RTH</td>
+                <td>Warna isi berbeda untuk taman vs area pedestrian; popup luas</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- METODE -->
+      <section class="section" id="metode">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Analisis Spasial</span>
+            <h2>Bagaimana keputusan diambil</h2>
+            <p>Studi kasus: <b>halte mana yang paling membutuhkan fasilitas penyeberangan baru?</b> Tiga analisis dijalankan langsung di browser dan parameternya dapat diubah.</p>
+          </div>
+          <div class="grid-3">
+            <div class="box method">
+              <div class="method-ico">◎</div>
+              <div>
+                <h3>Buffer analysis</h3>
+                <p>Lingkaran jangkauan jalan kaki di sekeliling setiap halte. Bawaannya 400 m, kira-kira 5 menit berjalan kaki.</p>
+                <div class="formula">buffer(halte, r = 400 m)</div>
+              </div>
+            </div>
+            <div class="box method">
+              <div class="method-ico">⌖</div>
+              <div>
+                <h3>Spatial query</h3>
+                <p>Mencari zebra cross / jembatan terdekat dari tiap halte (jarak haversine), lalu mengklasifikasikan halte menjadi <b>terlayani</b>, <b>kurang</b>, atau <b>tidak terlayani</b>.</p>
+                <div class="formula">d ≤ ideal → terlayani<br />d ≤ r → kurang<br />d &gt; r → tidak terlayani</div>
+              </div>
+            </div>
+            <div class="box method">
+              <div class="method-ico">▦</div>
+              <div>
+                <h3>Density analysis</h3>
+                <p>Heatmap kepadatan titik fasilitas untuk melihat koridor yang sudah padat fasilitas dan yang masih kosong.</p>
+                <div class="formula">heatmap(titik, radius px)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FITUR -->
+      <section class="section" id="fitur">
+        <div class="wrap">
+          <div class="grid-2">
+            <div class="section-head">
+              <span class="eyebrow">Fitur</span>
+              <h2>Yang bisa dilakukan di peta</h2>
+              <p>Dibangun dengan OpenLayers di atas peta dasar OpenStreetMap, Carto, atau citra satelit Esri.</p>
+            </div>
+            <ul class="feature-list">
+              <li>Filter layer dan kategori titik dengan checkbox</li>
+              <li>Filter status halte dengan list box</li>
+              <li>Atur radius buffer &amp; jarak ideal secara langsung</li>
+              <li>Query radius: klik lokasi mana pun di peta</li>
+              <li>Tabel prioritas halte, klik untuk zoom</li>
+              <li>Popup detail: jarak, luas, panjang, elevasi</li>
+              <li>Heatmap kepadatan fasilitas</li>
+              <li>Legenda dinamis &amp; tiga pilihan basemap</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIM -->
+      <section class="section" id="tim">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Tim Penyusun</span>
+            <h2>Kelompok 6 · Sistem Informasi Geografis</h2>
+          </div>
+          <!-- TODO: lengkapi nama & NIM anggota kelompok -->
+          <div class="team">
+            <div class="member"><div class="avatar">AN</div><div><b>Abiyyu Nauval Sugiarto</b><span>2455301002</span></div></div>
+            <div class="member"><div class="avatar">BN</div><div><b>Benito Noel Simangunsong</b><span>2455301037</span></div></div>
+            <div class="member"><div class="avatar">MR</div><div><b>M. Risqullah</b><span>2455301097</span></div></div>
+            <div class="member"><div class="avatar">TA</div><div><b>Tia Amelia Bakara</b><span>2455301187</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="cta-band">
+            <div>
+              <h2>Lihat hasil analisisnya di peta</h2>
+              <p>Ubah radius buffer, saring kategori, dan temukan halte prioritas.</p>
+            </div>
+            <a class="btn" href="./peta.html">Buka Peta Interaktif →</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <span>© 2026 LangkahKota · Proyek Sistem Informasi Geografis</span>
+        <span>Peta dasar © OpenStreetMap contributors · Dibangun dengan OpenLayers</span>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/home.js"></script>
+  </body>
+</html>

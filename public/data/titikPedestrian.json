@@ -1,0 +1,695 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [
+    {
+      "type" : "Feature",
+      "id" : 0,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.442295,
+          0.48039900000000002
+        ]
+      },
+      "properties" : {
+        "FID" : 0,
+        "Title" : "Halte Arifin Ahmad depan Aulia Optical",
+        "Date_Creat" : "2026-10-05T13:13:04+07:00",
+        "Latitude" : 0.48039900000000002,
+        "Longitude" : 101.442295,
+        "Northing" : 0.48039900000000002,
+        "Easting" : 101.442295,
+        "Descriptio" : " ",
+        "Elevation" : 13.563599999999999,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 1,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.454025,
+          0.482375
+        ]
+      },
+      "properties" : {
+        "FID" : 1,
+        "Title" : "Halte BRK Syariah Mustafa Sari II",
+        "Date_Creat" : "2026-10-05T13:17:57+07:00",
+        "Latitude" : 0.482375,
+        "Longitude" : 101.454025,
+        "Northing" : 0.482375,
+        "Easting" : 101.454025,
+        "Descriptio" : " ",
+        "Elevation" : 14.7705,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 2,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.454351,
+          0.48252400000000001
+        ]
+      },
+      "properties" : {
+        "FID" : 2,
+        "Title" : "Halte BRK Syariah Mustafa Sari II (2)",
+        "Date_Creat" : "2026-10-05T13:18:45+07:00",
+        "Latitude" : 0.48252400000000001,
+        "Longitude" : 101.454351,
+        "Northing" : 0.48252400000000001,
+        "Easting" : 101.454351,
+        "Descriptio" : " ",
+        "Elevation" : 15.606265,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 3,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.454385,
+          0.48810100000000001
+        ]
+      },
+      "properties" : {
+        "FID" : 3,
+        "Title" : "Halte Bus Kasah",
+        "Date_Creat" : "2026-10-05T13:03:33+07:00",
+        "Latitude" : 0.48810100000000001,
+        "Longitude" : 101.454385,
+        "Northing" : 0.48810100000000001,
+        "Easting" : 101.454385,
+        "Descriptio" : " ",
+        "Elevation" : 12.7552,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 4,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.429060449559,
+          0.57365833516185405
+        ]
+      },
+      "properties" : {
+        "FID" : 4,
+        "Title" : "Halte Dekat PCR",
+        "Date_Creat" : "2026-09-30T12:13:39+07:00",
+        "Latitude" : 0.573658,
+        "Longitude" : 101.42906000000001,
+        "Northing" : 0.573658,
+        "Easting" : 101.42906000000001,
+        "Descriptio" : " ",
+        "Elevation" : 19.812864000000001,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 5,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.45106,
+          0.50610599999999994
+        ]
+      },
+      "properties" : {
+        "FID" : 5,
+        "Title" : "Halte Depan Gacoan Sudirman",
+        "Date_Creat" : "2026-10-05T13:00:35+07:00",
+        "Latitude" : 0.50610599999999994,
+        "Longitude" : 101.45106,
+        "Northing" : 0.50610599999999994,
+        "Easting" : 101.45106,
+        "Descriptio" : " ",
+        "Elevation" : 18.147200000000002,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 6,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.44766352203899,
+          0.521520402942245
+        ]
+      },
+      "properties" : {
+        "FID" : 6,
+        "Title" : "Halte Depan Kantor Pos",
+        "Date_Creat" : "2026-09-30T13:55:50+07:00",
+        "Latitude" : 0.52151999999999998,
+        "Longitude" : 101.447664,
+        "Northing" : 0.52151999999999998,
+        "Easting" : 101.447664,
+        "Descriptio" : " ",
+        "Elevation" : 20.920490000000001,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 7,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.447756666667,
+          0.53189166666665399
+        ]
+      },
+      "properties" : {
+        "FID" : 7,
+        "Title" : "Halte Depan MP",
+        "Date_Creat" : "2026-09-30T13:14:08+07:00",
+        "Latitude" : 0.53189200000000003,
+        "Longitude" : 101.447757,
+        "Northing" : 0.53189200000000003,
+        "Easting" : 101.447757,
+        "Descriptio" : " ",
+        "Elevation" : 15.762879999999999,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 8,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.447675,
+          0.52445166666666299
+        ]
+      },
+      "properties" : {
+        "FID" : 8,
+        "Title" : "Halte Depan Vinia",
+        "Date_Creat" : "2026-09-30T13:49:50+07:00",
+        "Latitude" : 0.52445200000000003,
+        "Longitude" : 101.447675,
+        "Northing" : 0.52445200000000003,
+        "Easting" : 101.447675,
+        "Descriptio" : " ",
+        "Elevation" : 16.44772,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 9,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.44732090804401,
+          0.51419128265087
+        ]
+      },
+      "properties" : {
+        "FID" : 9,
+        "Title" : "Halte Greencity Walk",
+        "Date_Creat" : "2026-09-30T14:04:54+07:00",
+        "Latitude" : 0.51419099999999995,
+        "Longitude" : 101.447321,
+        "Northing" : 0.51419099999999995,
+        "Easting" : 101.447321,
+        "Descriptio" : " ",
+        "Elevation" : 13.532503999999999,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 10,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.452916,
+          0.50396300000000005
+        ]
+      },
+      "properties" : {
+        "FID" : 10,
+        "Title" : "Halte im3 samping Jl. Pinang",
+        "Date_Creat" : "2026-10-05T13:16:27+07:00",
+        "Latitude" : 0.50396300000000005,
+        "Longitude" : 101.452916,
+        "Northing" : 0.50396300000000005,
+        "Easting" : 101.452916,
+        "Descriptio" : " ",
+        "Elevation" : 17.865959,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 11,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.445393,
+          0.50890899999999994
+        ]
+      },
+      "properties" : {
+        "FID" : 11,
+        "Title" : "Halte Nangka",
+        "Date_Creat" : "2026-10-05T12:54:24+07:00",
+        "Latitude" : 0.50890899999999994,
+        "Longitude" : 101.445393,
+        "Northing" : 0.50890899999999994,
+        "Easting" : 101.445393,
+        "Descriptio" : " ",
+        "Elevation" : 15.500463,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 12,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.455501,
+          0.49624299999999999
+        ]
+      },
+      "properties" : {
+        "FID" : 12,
+        "Title" : "Halte RS Awal Bros",
+        "Date_Creat" : "2026-10-05T13:02:06+07:00",
+        "Latitude" : 0.49624299999999999,
+        "Longitude" : 101.455501,
+        "Northing" : 0.49624299999999999,
+        "Easting" : 101.455501,
+        "Descriptio" : " ",
+        "Elevation" : 13.385251,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 13,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.45522099999999,
+          0.49621399999999999
+        ]
+      },
+      "properties" : {
+        "FID" : 13,
+        "Title" : "Halte RS Syafira",
+        "Date_Creat" : "2026-10-05T13:01:32+07:00",
+        "Latitude" : 0.49621399999999999,
+        "Longitude" : 101.45522099999999,
+        "Northing" : 0.49621399999999999,
+        "Easting" : 101.45522099999999,
+        "Descriptio" : " ",
+        "Elevation" : 15.313781000000001,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 14,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.44217,
+          0.48015000000000002
+        ]
+      },
+      "properties" : {
+        "FID" : 14,
+        "Title" : "Halte Sempoerna",
+        "Date_Creat" : "2026-10-05T13:11:07+07:00",
+        "Latitude" : 0.48015000000000002,
+        "Longitude" : 101.44217,
+        "Northing" : 0.48015000000000002,
+        "Easting" : 101.44217,
+        "Descriptio" : " ",
+        "Elevation" : 13.725519999999999,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 15,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.45578999999999,
+          0.510463
+        ]
+      },
+      "properties" : {
+        "FID" : 15,
+        "Title" : "Halte SMK 2",
+        "Date_Creat" : "2026-10-05T12:56:09+07:00",
+        "Latitude" : 0.510463,
+        "Longitude" : 101.45578999999999,
+        "Northing" : 0.510463,
+        "Easting" : 101.45578999999999,
+        "Descriptio" : " ",
+        "Elevation" : 16.103957999999999,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 16,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.447614627069,
+          0.51420893952118896
+        ]
+      },
+      "properties" : {
+        "FID" : 16,
+        "Title" : "Halte Taman Kota",
+        "Date_Creat" : "2026-09-30T14:05:29+07:00",
+        "Latitude" : 0.51420900000000003,
+        "Longitude" : 101.447615,
+        "Northing" : 0.51420900000000003,
+        "Easting" : 101.447615,
+        "Descriptio" : " ",
+        "Elevation" : 14.654222000000001,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 17,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.447395324707,
+          0.528856694698292
+        ]
+      },
+      "properties" : {
+        "FID" : 17,
+        "Title" : "Jembatan Penyebrangan",
+        "Date_Creat" : "2026-09-30T13:38:57+07:00",
+        "Latitude" : 0.52885700000000002,
+        "Longitude" : 101.447395,
+        "Northing" : 0.52885700000000002,
+        "Easting" : 101.447395,
+        "Descriptio" : " ",
+        "Elevation" : 14.435045000000001,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 18,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.449666280667,
+          0.56018673430291699
+        ]
+      },
+      "properties" : {
+        "FID" : 18,
+        "Title" : "Penyebrangan Sembilang",
+        "Date_Creat" : "2026-09-30T13:00:09+07:00",
+        "Latitude" : 0.56018699999999999,
+        "Longitude" : 101.44966599999999,
+        "Northing" : 0.56018699999999999,
+        "Easting" : 101.44966599999999,
+        "Descriptio" : " ",
+        "Elevation" : 8.9339929999999992,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 19,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.44774,
+          0.52977333333332499
+        ]
+      },
+      "properties" : {
+        "FID" : 19,
+        "Title" : "Trotoar Sudirman",
+        "Date_Creat" : "2026-09-30T13:29:06+07:00",
+        "Latitude" : 0.52977300000000005,
+        "Longitude" : 101.44774,
+        "Northing" : 0.52977300000000005,
+        "Easting" : 101.44774,
+        "Descriptio" : " ",
+        "Elevation" : 14.838976000000001,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 20,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.445356666667,
+          0.57021999999998196
+        ]
+      },
+      "properties" : {
+        "FID" : 20,
+        "Title" : "Zebra Cross Bundaran PHR",
+        "Date_Creat" : "2026-09-30T12:30:33+07:00",
+        "Latitude" : 0.57021999999999995,
+        "Longitude" : 101.445357,
+        "Northing" : 0.57021999999999995,
+        "Easting" : 101.445357,
+        "Descriptio" : " ",
+        "Elevation" : 10.343071999999999,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 21,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.432458333333,
+          0.56931999999998595
+        ]
+      },
+      "properties" : {
+        "FID" : 21,
+        "Title" : "Zebra Cross Dekat Simpang 4 PCR",
+        "Date_Creat" : "2026-09-30T12:25:16+07:00",
+        "Latitude" : 0.56932000000000005,
+        "Longitude" : 101.432458,
+        "Northing" : 0.56932000000000005,
+        "Easting" : 101.432458,
+        "Descriptio" : " ",
+        "Elevation" : 12.747999999999999,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 22,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.44482000000001,
+          0.49135166666665903
+        ]
+      },
+      "properties" : {
+        "FID" : 22,
+        "Title" : "Zebra Cross depan PKK",
+        "Date_Creat" : "2026-09-30T14:49:50+07:00",
+        "Latitude" : 0.49135200000000001,
+        "Longitude" : 101.44482000000001,
+        "Northing" : 0.49135200000000001,
+        "Easting" : 101.44482000000001,
+        "Descriptio" : " ",
+        "Elevation" : 15.257664,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 23,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.444429134196,
+          0.48990243254166099
+        ]
+      },
+      "properties" : {
+        "FID" : 23,
+        "Title" : "Zebra Cross Masjid Rahmatullah",
+        "Date_Creat" : "2026-09-30T14:51:09+07:00",
+        "Latitude" : 0.489902,
+        "Longitude" : 101.444429,
+        "Northing" : 0.489902,
+        "Easting" : 101.444429,
+        "Descriptio" : " ",
+        "Elevation" : 15.055116999999999,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 24,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.44532833333299,
+          0.50103666666666002
+        ]
+      },
+      "properties" : {
+        "FID" : 24,
+        "Title" : "Zebra Cross Masjid Rahmatullah2",
+        "Date_Creat" : "2026-09-30T14:32:23+07:00",
+        "Latitude" : 0.50103699999999995,
+        "Longitude" : 101.445328,
+        "Northing" : 0.50103699999999995,
+        "Easting" : 101.445328,
+        "Descriptio" : " ",
+        "Elevation" : 14.696327999999999,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 25,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.444902769004,
+          0.49161179217149698
+        ]
+      },
+      "properties" : {
+        "FID" : 25,
+        "Title" : "Zebra Cross Puskesmas Garuda",
+        "Date_Creat" : "2026-09-30T14:27:18+07:00",
+        "Latitude" : 0.49161199999999999,
+        "Longitude" : 101.444903,
+        "Northing" : 0.49161199999999999,
+        "Easting" : 101.444903,
+        "Descriptio" : " ",
+        "Elevation" : 13.523497000000001,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 26,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.44511658715599,
+          0.49936362118368499
+        ]
+      },
+      "properties" : {
+        "FID" : 26,
+        "Title" : "Zebra Cross RSIA Annisa",
+        "Date_Creat" : "2026-09-30T14:30:08+07:00",
+        "Latitude" : 0.49936399999999997,
+        "Longitude" : 101.445117,
+        "Northing" : 0.49936399999999997,
+        "Easting" : 101.445117,
+        "Descriptio" : " ",
+        "Elevation" : 15.006629,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 27,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.43004998328,
+          0.56922142701343603
+        ]
+      },
+      "properties" : {
+        "FID" : 27,
+        "Title" : "Zebra Cross Simpang 4 PCR",
+        "Date_Creat" : "2026-09-30T12:20:25+07:00",
+        "Latitude" : 0.56922099999999998,
+        "Longitude" : 101.43004999999999,
+        "Northing" : 0.56922099999999998,
+        "Easting" : 101.43004999999999,
+        "Descriptio" : " ",
+        "Elevation" : 11.144467000000001,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 28,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.44823333333299,
+          0.51332166666666101
+        ]
+      },
+      "properties" : {
+        "FID" : 28,
+        "Title" : "Zebra Cross Taman Kota",
+        "Date_Creat" : "2026-09-30T14:00:13+07:00",
+        "Latitude" : 0.51332199999999994,
+        "Longitude" : 101.448233,
+        "Northing" : 0.51332199999999994,
+        "Easting" : 101.448233,
+        "Descriptio" : " ",
+        "Elevation" : 16.957999999999998,
+        "Foto" : " "
+      }
+    },
+    {
+      "type" : "Feature",
+      "id" : 29,
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          101.448724452883,
+          0.513698495463766
+        ]
+      },
+      "properties" : {
+        "FID" : 29,
+        "Title" : "Zebra Cross Taman Kota (1)",
+        "Date_Creat" : "2026-09-30T14:11:06+07:00",
+        "Latitude" : 0.51369799999999999,
+        "Longitude" : 101.448724,
+        "Northing" : 0.51369799999999999,
+        "Easting" : 101.448724,
+        "Descriptio" : " ",
+        "Elevation" : 17.997714999999999,
+        "Foto" : " "
+      }
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Peta Interaktif · LangkahKota Pekanbaru</title>
+  </head>
+
+  <body class="page-peta">
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>LangkahKota <small>Pekanbaru</small></span>
+      </a>
+      <nav class="topnav">
+        <a href="./index.html">Home</a>
+        <a href="./peta.html" class="active">Peta Interaktif</a>
+      </nav>
+      <button id="btn-panel" class="btn-icon only-mobile" aria-label="Tampilkan panel">☰</button>
+    </header>
+
+    <div class="app">
+      <aside class="panel" id="panel">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="tab-layer" role="tab">Layer &amp; Filter</button>
+          <button class="tab" data-tab="tab-analisis" role="tab">Analisis</button>
+          <button class="tab" data-tab="tab-hasil" role="tab">Hasil</button>
+        </div>
+
+        <!-- TAB 1: LAYER & FILTER -->
+        <div class="tab-body active" id="tab-layer">
+          <section class="card">
+            <h3>Peta dasar</h3>
+            <select id="basemap" class="select">
+              <option value="osm">OpenStreetMap</option>
+              <option value="carto">Carto Light (abu-abu)</option>
+              <option value="satelit">Citra Satelit (Esri)</option>
+            </select>
+          </section>
+
+          <section class="card">
+            <h3>Layer data survei</h3>
+            <label class="check"><input type="checkbox" id="lyr-titik" checked /> <span>Titik fasilitas pedestrian</span> <em id="n-titik">0</em></label>
+            <label class="check"><input type="checkbox" id="lyr-jalur" checked /> <span>Jalur pedestrian</span> <em id="n-jalur">0</em></label>
+            <label class="check"><input type="checkbox" id="lyr-area" checked /> <span>Area pedestrian &amp; taman</span> <em id="n-area">0</em></label>
+            <h3 class="mt">Layer hasil analisis</h3>
+            <label class="check"><input type="checkbox" id="lyr-buffer" checked /> <span>Buffer jangkauan halte</span></label>
+            <label class="check"><input type="checkbox" id="lyr-heat" /> <span>Heatmap kepadatan fasilitas</span></label>
+          </section>
+
+          <section class="card">
+            <h3>Filter kategori titik</h3>
+            <div id="filter-kategori"></div>
+            <div class="row-btn">
+              <button class="btn-link" id="kat-semua">Pilih semua</button>
+              <button class="btn-link" id="kat-kosong">Kosongkan</button>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>Filter status halte</h3>
+            <select id="status-filter" class="select">
+              <option value="semua">Semua status</option>
+              <option value="tidak">Tidak terlayani</option>
+              <option value="kurang">Kurang terlayani</option>
+              <option value="terlayani">Terlayani</option>
+            </select>
+            <p class="hint">Status dihitung di tab <b>Analisis</b>.</p>
+          </section>
+        </div>
+
+        <!-- TAB 2: ANALISIS -->
+        <div class="tab-body" id="tab-analisis">
+          <section class="card">
+            <h3>1 · Buffer jangkauan halte</h3>
+            <p class="hint">Lingkaran jangkauan berjalan kaki di sekitar tiap halte. 400 m ≈ 5 menit jalan kaki.</p>
+            <div class="slider">
+              <input type="range" id="radius" min="100" max="1000" step="50" value="400" />
+              <output id="radius-val">400 m</output>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>2 · Spatial query penyeberangan</h3>
+            <p class="hint">
+              Untuk tiap halte dicari zebra cross / jembatan penyeberangan terdekat, lalu diklasifikasikan:
+            </p>
+            <ul class="rules">
+              <li><i class="dot" style="--c: var(--ok)"></i><span><b>Terlayani</b>: jarak ≤ jarak ideal</span></li>
+              <li><i class="dot" style="--c: var(--warn)"></i><span><b>Kurang</b>: di atas ideal, masih dalam buffer</span></li>
+              <li><i class="dot" style="--c: var(--bad)"></i><span><b>Tidak terlayani</b>: tidak ada dalam buffer</span></li>
+            </ul>
+            <label class="lbl" for="ideal">Jarak ideal ke penyeberangan</label>
+            <div class="slider">
+              <input type="range" id="ideal" min="50" max="400" step="25" value="200" />
+              <output id="ideal-val">200 m</output>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>3 · Query radius di peta</h3>
+            <p class="hint">Aktifkan, lalu klik lokasi mana pun di peta untuk melihat fasilitas dalam radius buffer.</p>
+            <button class="btn" id="btn-query">Aktifkan query radius</button>
+          </section>
+
+          <section class="card">
+            <h3>4 · Density (heatmap)</h3>
+            <p class="hint">Kepadatan sebaran titik fasilitas yang sedang difilter.</p>
+            <label class="check"><input type="checkbox" id="lyr-heat-2" /> <span>Tampilkan heatmap</span></label>
+            <label class="lbl" for="heat-radius">Radius heatmap</label>
+            <div class="slider">
+              <input type="range" id="heat-radius" min="8" max="60" step="2" value="26" />
+              <output id="heat-radius-val">26 px</output>
+            </div>
+          </section>
+        </div>
+
+        <!-- TAB 3: HASIL -->
+        <div class="tab-body" id="tab-hasil">
+          <section class="card">
+            <h3>Ringkasan pelayanan halte</h3>
+            <div id="ringkasan" class="stats"></div>
+            <p class="hint" id="ringkasan-teks"></p>
+          </section>
+          <section class="card">
+            <h3>Prioritas penambahan penyeberangan</h3>
+            <p class="hint">Diurutkan dari status terburuk lalu jarak terjauh. Klik baris untuk menuju lokasi.</p>
+            <div class="table-wrap">
+              <table class="tbl">
+                <thead><tr><th>#</th><th>Halte</th><th>Terdekat</th><th>Status</th></tr></thead>
+                <tbody id="tabel-prioritas"></tbody>
+              </table>
+            </div>
+            <p class="note">
+              Catatan: analisis hanya memakai fasilitas yang tercatat dalam survei. Penyeberangan yang ada di lapangan
+              tetapi belum disurvei tidak ikut terhitung.
+            </p>
+          </section>
+        </div>
+      </aside>
+
+      <main class="map-wrap">
+        <div id="map" class="map"></div>
+
+        <div class="map-tools">
+          <button class="btn-chip" id="btn-fit" title="Zoom ke seluruh data">⤢ Semua data</button>
+        </div>
+
+        <div id="query-hint" class="toast" hidden>Mode query aktif · klik peta untuk mencari fasilitas dalam radius</div>
+
+        <div class="legend" id="legenda"></div>
+
+        <div id="popup" class="ol-popup">
+          <button id="popup-closer" class="ol-popup-closer" aria-label="Tutup">✕</button>
+          <div id="popup-content"></div>
+        </div>
+
+        <div id="loading" class="loading">Memuat data survei…</div>
+      </main>
+    </div>
+
+    <script type="module" src="./src/peta.js"></script>
+  </body>
+</html>
